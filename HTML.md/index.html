@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-AU-Compatible" content="ie-edge">
+        <title>Exercicios HTML</title>
+    </head>
+    <body>
+        <header>
+            <h1>Exercicios HTML</h1>
+        </header>
+        <nav>
+            <a href="exercicios/teste.html"></a>
+        </nav>
+        <section id="conteudo"></section>
+        <footer>
+            <br>
+            curso de web moderno 
+        </footer>
+        <script>
+            document.querySelectorAll('a').forEach(link =>{
+                link.onclick = function(e) {
+                    e.preventDefault()
+                    console.log('ação!')
+                }
+        })
+        </script>
+    </body>
+</html>
